@@ -1,5 +1,5 @@
 import { StyleSheet } from 'react-native';
-import { theme } from '../../global/styles/themes';
+import { theme } from '../../global/styles/theme';
 
 const styles = StyleSheet.create({
 
@@ -7,7 +7,6 @@ const styles = StyleSheet.create({
       flex: 1,
       alignItems: 'center',
       justifyContent: 'center',
-      backgroundColor: theme.colors.background,
     },
 
     image: { 
@@ -23,14 +22,18 @@ const styles = StyleSheet.create({
     title: { 
         color: theme.colors.heading,
         textAlign: 'center',
-        fontSize: 40,
+        fontSize: 37,
+        fontFamily: theme.fonts.title700,
+        lineHeight: 40,
     },
     
     subTitle: { 
         color: theme.colors.heading,
         textAlign: 'center',
         fontSize: 15,
-        paddingBottom: 10
+        paddingBottom: 10,
+        fontFamily: theme.fonts.title500,
+        lineHeight: 25,
     },
 
   });
