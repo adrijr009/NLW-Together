@@ -2,30 +2,31 @@ import React from 'react';
 import { View, Text } from 'react-native';
 
 import { Avatar } from '../Avatar';
-import styles from './styles';
+import { styles } from './styles';
 
 export function Profile() {
-    return (
-      <View style={styles.container}>
+  return (
+    <View style={styles.container}>
 
-        <Avatar urlImage="https://github.com/adrijr009.png" />
+      <Avatar urlImage="https://github.com/adrijr009.png"/>
 
-        <View>
+      <View>
+        <View style={styles.user}>
+          <Text style={styles.greeting}>
+            Olá,
+          </Text>
           
-          <View style={styles.user}>
-            <Text style={styles.greeting}>
-              Olá,
-            </Text>
-
-            <Text style={styles.username}>
-              Didico
-            </Text>
-          </View>
-
-          <Text style={styles.message}>
-            Hoje é dia de vitória
+          <Text style={styles.username}>
+            Junior
           </Text>
         </View>
+
+        <Text style={styles.message}>
+          Hoje é dia de vitória
+        </Text>
       </View>
-    );
-  }
+
+    </View>
+  )
+
+}
